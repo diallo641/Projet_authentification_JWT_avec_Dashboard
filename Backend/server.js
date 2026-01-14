@@ -15,7 +15,7 @@ connexionDB();
 
 //Utiliser les endpoints
 app.use("/APIRole", require('./routes/roles'));
-app.use("/api/user", require("./routes/utilisateursJWT"));
+app.use("/api/user", require("./routes/utilisateurs"));
 app.use("/apilogin", require("./routes/login"));
 
 
