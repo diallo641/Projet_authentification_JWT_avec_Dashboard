@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./backend/server.js"
+    "start": "nodemon ./backend/server.js",
+    "dev": "tailwindcss -i ./Frontend/CSS/style/input.css -o ./Frontend/CSS/style/output.css --watch"
   },
   "author": "",
   "license": "ISC",
