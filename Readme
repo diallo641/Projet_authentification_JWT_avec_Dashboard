@@ -33,8 +33,8 @@ L’objectif principal est de mettre en pratique :
 
 ## 🛠️ Technologies utilisées
 
-- HTML5
-- CSS3
+- HTML
+- CSS (Framework Tailwind)
 - JavaScript 
 - Node.js / Express (backend existant pour l’authentification)
 - JWT (authentification)
