@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/style/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/888/888879.png">
+    <title>Client</title>   
+</head>
+<body class="bg-blue-100">
+    <div class="flex justify-center md:justify-end">
+      <button id="deconnexion" type="button" class="m-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 ">
+        <i class="fa fa-arrow-right"></i> Clients
+      </button>
+    </div>
+    <div class="container mx-auto p-4">
+      <h1 class="text-black text-xl text-red-600 sm:text-2xl sm:text-green-500 md:text-6xl md:text-blue-900  text-center font-bold">Liste des utilsateurs de notre site : <span id="taille" class="text-green-600 font-bold text-6xl"></span></h1>
+    </div>
+    <div class="overflow-x-auto flex justify-center px-12 md:px-16">
+      <table class="min-w-full md:max-w-4xl mx-auto border-collapse border border-gray-300 shadow-lg">
+        <thead>
+          <tr class="bg-blue-500 text-white text-xl sm:text-2xl md:text-3xl">
+            <th class="p-3 border text-sm sm:text-base md:text-xl">ID</th>
+            <th class="p-3 border text-sm sm:text-base md:text-xl">Nom</th>
+            <th class="p-3 border text-sm sm:text-base md:text-xl">Prénom</th>
+            <th class="p-3 border text-sm sm:text-base md:text-xl hidden md:table-cell">Email</th>
+            <th class="p-3 border text-sm sm:text-base md:text-xl hidden md:table-cell">Rôle</th>
+            <th class="p-3 border text-sm sm:text-base md:text-xl text-center hidden md:table-cell">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table_utilisateurs" class="bg-blue-100 text-center border-white text-gray-700">
+          <!-- Les lignes des utilisateurs seront insérées ici dynamiquement -->
+        </tbody>
+      </table>
+    </div>
+<script src="../JS/utilisateurs.js"></script>
+</body>
+</html>
