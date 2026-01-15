@@ -1,0 +1,97 @@
+# 📘 Projet – Gestion des utilisateurs avec authentification et rôles 
+
+## 🧾 Description
+
+Ce projet est une application web permettant la **gestion des utilisateurs** avec un système de **connexion**, de **rôles** et d’**accès conditionnel** aux fonctionnalités.
+
+L’objectif principal est de mettre en pratique :
+- l’authentification utilisateur,
+- la gestion des rôles,
+- le contrôle d’accès côté frontend,
+
+
+---
+
+## 🎯 Fonctionnalités réalisées
+
+### 🔐 Authentification
+- Connexion des utilisateurs via un formulaire
+- Récupération du token JWT depuis le backend
+- Stockage du token et des informations utilisateur dans le `localStorage`
+- Déconnexion de l’utilisateur
+
+### 👥 Gestion des rôles
+- Chaque utilisateur possède un rôle (`Admin`, `Manager`, `Client`, etc.)
+- Vérification du rôle côté frontend
+- Accès conditionnel aux pages selon le rôle
+
+### 🧭 Navigation dynamique
+- Affichage ou masquage des liens du menu selon le rôle de l’utilisateur
+- Redirection automatique vers les pages autorisées
+
+---
+
+## 🛠️ Technologies utilisées
+
+- HTML5
+- CSS3
+- JavaScript 
+- Node.js / Express (backend existant pour l’authentification)
+- JWT (authentification)
+- LocalStorage (gestion de session côté frontend)
+
+---
+
+## 🗂️ Structure simplifiée du projet
+frontend/
+│── index.html
+│── JS
+│── CSS
+│── Pages
+backend/
+│── routes/
+│── controllers/
+│── config/
+│── models/
+│── middleware/
+│── server.js
+
+
+---
+
+## 🔎 Fonctionnement de la consultation du profil
+
+1. L’utilisateur se connecte
+2. Le backend retourne un token et les informations de l’utilisateur
+3. Les données sont stockées dans le `localStorage`
+4. Lors de l’accès à la page :
+   - Vérification de la connexion
+   - Vérification du rôle 
+5. Si les conditions sont respectées, redirection
+6. Sinon, l’utilisateur est redirigé vers une autre page
+
+---
+
+## ⚠️ Limites du projet
+
+- Le contrôle d’accès est effectué uniquement côté frontend
+- Cette approche est adaptée à un **projet pédagogique**
+- En environnement professionnel, la sécurité doit être gérée côté backend via des middlewares
+
+---
+
+## 🚀 Améliorations possibles
+
+- Sécurisation des rôles côté backend
+- Création d’une route backend dédiée au profil utilisateur
+- Modification du profil
+- Ajout d’une photo de profil
+- Gestion avancée des permissions
+- Rafraîchissement automatique du token
+
+---
+
+## 👨‍💻 Auteur
+
+**Thierno Boubacar DIALLO**  
+Projet réalisé dans le cadre d’une formation en développement web.
